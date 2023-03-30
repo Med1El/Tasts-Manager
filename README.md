@@ -2,7 +2,7 @@
 
 a vanilla javascript demo.
 
-application to manage tasts with CRUD operations.
+application to manage tasks with CRUD operations.
 
 I still need to add local storage fonctionalies.
 
