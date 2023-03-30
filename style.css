@@ -1,0 +1,77 @@
+.mt-0{
+    margin-top: 20px;
+}
+
+.mb-0{
+    margin-bottom: 20px;
+}
+
+.mb-1{
+    margin-bottom: 30px;
+}
+
+.ph::placeholder{
+    color:purple;
+    opacity: 60%;
+}
+
+
+.coll{
+    margin-top: 25px;
+    margin-left: 25px;
+    width: 80%;
+}
+
+.flex-space {
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.btn-warn{
+
+    height: 22px;
+    width: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    color: purple;
+
+    
+}
+
+.btn-edit{
+
+    margin-right: 25px;
+    height: 22px;
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: purple;
+
+}
+
+.btn-validate{
+
+    margin-right: 25px;
+    height: 22px;
+    width: 20px;
+    font-size: 18px;
+    text-align: center;
+    color: purple;
+
+}
+
+.collection-item{
+    font-size: 16px;
+    font-weight: 450;
+}
+
+
+.ml-auto{
+    margin-left: auto;
+}
+
+
+
+
