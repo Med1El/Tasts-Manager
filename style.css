@@ -67,11 +67,22 @@
     font-weight: 450;
 }
 
+.filter{
+    width: 70%;
+    margin-left: 30px;
+}
+
+#temp-input{
+    height : "30px";
+    width : "220px";
+    margin : "0px";
+    padding : "0px";
+}
+
 
 .ml-auto{
     margin-left: auto;
 }
-
 
 
 

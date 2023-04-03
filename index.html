@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <!-- Compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -12,8 +13,10 @@
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="./snackbar/snackbar.min.css" />
+
+    <link rel="stylesheet" href="style.css" />
 
     <title>Document</title>
   </head>
@@ -25,8 +28,16 @@
             <div class="card-content blue-text">
               <span class="card-title big-text">Add Tast</span>
               <label for="input" class="blue-text">New Task</label>
-              <input id="input" class="ph" type="text" name="input" placeholder="Enter Text Here ..."/>
-            <a id="submit" class="btn mt-0 green lighten-2" href="#">Submit</a>
+              <input
+                id="input"
+                class="ph"
+                type="text"
+                name="input"
+                placeholder="Enter Text Here ..."
+              />
+              <a id="submit" class="btn mt-0 green lighten-2" href="#"
+                >Submit</a
+              >
             </div>
           </div>
         </div>
@@ -34,38 +45,65 @@
 
       <div class="row">
         <div class="col s12">
-            <div class="card purple lighten-4">
-                <div class="card-content blue-text w-85">
-                    <span class="card-title">Manage Tasks List</span>
-                    <ul class="collection coll w-85 mb-1">
-                        <li class="collection-item purple lighten-3 flex-space">List Item 1 
-                          <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
-                          <a href="#" class="btn-warn yellow lighten-3">x</a>
-                        </li>
-                        <li class="collection-item purple lighten-3 flex-space">List Item 2 
-                          <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
-                          <a href="#" class="btn-warn yellow lighten-3">x</a>
-                        </li>
-                        <li class="collection-item purple lighten-3 flex-space">List Item 3 
-                          <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
-                          <a href="#" class="btn-warn yellow lighten-3">x</a>
-                        </li>
-                        <li class="collection-item purple lighten-3 flex-space">List Item 4 
-                          <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
-                          <a href="#" class="btn-warn yellow lighten-3">x</a>
-                        </li>
-                        <li class="collection-item purple lighten-3 flex-space">List Item 5 
-                          <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
-                          <a href="#" class="btn-warn yellow lighten-3">x</a>
-                        </li>
-                    </ul>
-                    <a id="clear" href="#" class="btn green lighten-2">Clear All Tasks</a>
-                </div>
-
+          <div class="card purple lighten-4">
+            <div class="card-content blue-text w-85">
+              <span class="card-title">Manage Tasks List</span>
+              <div class="filter">
+                <input
+                  id="filter"
+                  class="ph"
+                  type="text"
+                  placeholder="Enter Text To Filter ..."
+                />
+              </div>
+              <ul class="collection coll w-85 mb-1">
+                <li class="collection-item purple lighten-3 flex-space">
+                  List Item 1
+                  <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
+                  <a class="btn-warn yellow lighten-3 modat-trigger" href="#modal1">x</a>
+                </li>
+                <li class="collection-item purple lighten-3 flex-space">
+                  List Item 2
+                  <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
+                  <a href="#" class="btn-warn yellow lighten-3">x</a>
+                </li>
+                <li class="collection-item purple lighten-3 flex-space">
+                  List Item 3
+                  <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
+                  <a href="#" class="btn-warn yellow lighten-3">x</a>
+                </li>
+                <li class="collection-item purple lighten-3 flex-space">
+                  List Item 4
+                  <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
+                  <a href="#" class="btn-warn yellow lighten-3">x</a>
+                </li>
+                <li class="collection-item purple lighten-3 flex-space">
+                  List Item 5
+                  <a href="#" class="btn-edit blue lighten-3 ml-auto">✎</a>
+                  <a href="#" class="btn-warn yellow lighten-3">x</a>
+                </li>
+              </ul>
+              <a id="clear" href="#" class="btn green lighten-2"
+                >Clear All Tasks</a
+              >
             </div>
+          </div>
         </div>
       </div>
     </div>
+
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Modal Header</h4>
+        <p>A bunch of text</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-close waves-effect waves-green btn-flat"
+          >Agree</a
+        >
+      </div>
+    </div>
+    <script src="./snackbar/snackbar.min.js"></script>
     <script src="main.js"></script>
   </body>
 </html>
