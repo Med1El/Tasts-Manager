@@ -124,8 +124,8 @@ function onInputFilter(e) {
 //========Clear-Button============//
 
 clearBtn.addEventListener("click", e => {
-  if(confirm('Are You Sure You Want To Clear The List ?'));
-  clearList();
+  e.preventDefault();
+  if(confirm('Are You Sure You Want To Clear The List ?')) clearList();
 });
 
 //========Reusable-Functions============//
